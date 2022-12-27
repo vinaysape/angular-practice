@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/comp1">comp1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/comp2">comp2</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 style="color: red">Interpolation Practice</h1>
+      <h2>my name is {{ name }}</h2>
+      <h3>
+        my city is {{ address.city }} my state is {{ address.state }} my Country
+        is {{ address.country }}
+      </h3>
+      <h4>
+        my skill sets are {{ skills[0] }}, {{ skills[1] }} and {{ skills[2] }}
+      </h4>
+      <hr />
+      <h1 style="color: red">Pipes practice</h1>
+      <h4>my salary is {{ salary | currency : "INR" : "symbol" : ".0" }}/-</h4>
+      <h4>todays date is {{ todaysDate | date : "dd/M/y" }}</h4>
+      <hr />
+      <h1 style="color: red">Property Binding Practice</h1>
+      <h3 [innerText]="skills[0]"></h3>
+      <div [innerHTML]="title"></div>
+      <hr />
+      <h1 style="color: red">Directives Practice</h1>
+      <h1 style="color: green">ngIf</h1>
+      <h2 *ngIf="ngifdemo">Ngif Demo will display if true</h2>
+      <hr />
+      <h1 style="color: green">ngIfElse</h1>
+      <h2 *ngIf="ngifdemo; else elseBlock">ngif else demo</h2>
+      <ng-template #elseBlock>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="First name"
+        />
+      </ng-template>
+      <hr />
+      <h1 style="color: green">NgIf Then Else</h1>
+      <h2 *ngIf="message; then thenBlock; else elseBlock1">
+        Ng If Then Else Demo
+      </h2>
+      <ng-template #thenBlock>
+        <h3>Then Block Gets Displayed</h3>
+      </ng-template>
+      <ng-template #elseBlock1>
+        <h3>Else Block Gets Displayed</h3>
+      </ng-template>
+      <hr />
+      <h1 style="color: green">Ng Switch</h1>
+      <div [ngSwitch]="cityname">
+        <h1 *ngSwitchCase="'Mumbai'">Maharashtra</h1>
+        <h1 *ngSwitchCase="'Indore'">M.P</h1>
+        <h1 *ngSwitchDefault>No State</h1>
+      </div>
+      <hr />
+      <h1 style="color: green">Ng For</h1>
+      <ul>
+        <li *ngFor="let item of skills; let i = index">{{ i + item }}</li>
+      </ul>
+      <hr />
+      <h1 style="color: red">Attribute Directives</h1>
+      <h2 style="color: green">NgClass</h2>
+      <h3 [ngClass]="{ textcolor: ngifdemo }">Ng class Demo</h3>
+      <hr />
+      <h2 style="color: green">ngStyle</h2>
+      <h3
+        [ngStyle]="{
+          'font-size': ngifdemo ? '20px' : '50px',
+          color: ngifdemo ? 'red' : 'blue'
+        }"
+      >
+        ngStyle Demo
+      </h3>
+      <h3 [ngStyle]="{ color: ngifdemo ? 'red' : 'blue' }">ngStyle Demo</h3>
+      <hr />
+      <h1 appCustom>&nbsp; Custome Directive &nbsp;</h1>
+      <hr />
+      <h1 style="color: red">Custom Pipes</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let customer of customerList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ customer.customerName | custom : customer.gender }}</td>
+            <td>{{ customer.gender }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h3>File size is: {{ size | filesize }}</h3>
+      <hr />
+      <h1 style="color: red">Event Binding</h1>
+      <button (click)="clickme()">Click me</button>
+      <h3 *ngIf="clicked">button clicked</h3>
+      <hr />
+      <div>
+        <h1>Tow Way Data Binding</h1>
+        <label for="id1">First name</label>
+        <input type="text"  [(ngModel)]="firstname" id="id1">
+        <button (click)="submit()">Submit</button>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div> -->
